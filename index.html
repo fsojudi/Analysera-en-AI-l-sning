@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Återvinningsklassificering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AI Återvinningsklassificering</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <img id="imagePreview" alt="Bild Preview">
+
+    <div id="result"></div>
+    <div id="recommendation"></div>
+
+    <div class="button-container">
+        <button class="recycle-btn" onclick="location.reload()">Ladda om</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="app.js"></script>
+</body>
+</html>
